@@ -3,10 +3,6 @@
 printf "\n-- Installing Ubuntu Essentials --"
 printf "\n ================================ \n\n"
 
-printf "\n-- Installing git --\n"
-printf "\n ------------------ \n\n"
-sudo apt-get install --assume-yes git
-
 
 printf "\n-- Installing sublime text 3 --"
 printf "\n ----------------------------- \n\n"
@@ -19,6 +15,11 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 # Update apt sources and install Sublime Text
 sudo apt-get update
 sudo apt-get install --assume-yes sublime-text
+
+
+printf "\n-- Installing git --\n"
+printf "\n ------------------ \n\n"
+sudo apt-get install --assume-yes git
 
 
 printf "\n-- Installing mlocate --"
@@ -54,3 +55,17 @@ sudo apt-get install --assume-yes openssh-server
 printf "\n-- Installing htop --"
 printf "\n ------------------- \n\n"
 sudo apt-get install --assume-yes htop
+
+
+printf "\n-- Installing ack-grep --"
+printf "\n ------------------- \n\n"
+sudo apt-get install --assume-yes ack-grep
+
+
+printf "\n-- Installing tmux --"
+printf "\n ------------------- \n\n"
+sudo apt-get install --assume-yes tmux
+
+printf "\n-- Set Sublime as default editor for git --"
+printf "\n ------------------- \n\n"
+git config --global core.editor "subl -n -w"
