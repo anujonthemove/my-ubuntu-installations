@@ -21,9 +21,9 @@ sudo apt-get update
 sudo apt-get install --assume-yes sublime-text
 
 
-printf "\n-- Installing google chromium browser --"
+printf "\n-- Installing mlocate --"
 printf "\n -------------------------------------- \n\n"
-sudo apt-get install --assume-yes chromium-browser
+sudo apt-get install --assume-yes mlocate
 
 
 printf "\n-- Installing unity tweak tool --"
