@@ -39,7 +39,7 @@ sudo apt-get install --assume-yes imagemagick
 
 printf "\n-- Installing pdftk --"
 printf "\n -------------------- \n\n"
-sudo apt-get install --assume-yes pdftk
+sudo snap install --assume-yes pdftk
 
 
 printf "\n-- Installing meld --"
